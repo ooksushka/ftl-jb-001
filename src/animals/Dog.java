@@ -31,4 +31,8 @@ public class Dog extends Animal {
         return dog;
     }
 
+    @Override
+    public void voice() {
+        System.out.println("woof");
+    }
 }
