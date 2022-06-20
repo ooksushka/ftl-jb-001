@@ -6,6 +6,7 @@ import L013.SwitchExample;
 import animals.Cat;
 import animals.Dog;
 import animals.Duck;
+import animals.MoveType;
 
 import java.net.ServerSocket;
 import java.util.*;
@@ -82,6 +83,11 @@ public class Main {
         SwitchExample.run();
     }
 
+    System.out.println(duck.getMoveType());
+    System.out.println(dog.getMoveType().getValue());
+    if(dog.getMoveType() == MoveType.WALK) {
+        System.out.println("Может ходить");
+    }
 
 
 
