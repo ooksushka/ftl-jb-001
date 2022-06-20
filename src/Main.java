@@ -62,6 +62,8 @@ public class Main {
         });
         for(Dog dogItem : dogsHomeless) {
             System.out.println(dogItem);
+            dogItem.setName(String.valueOf((new Random()).nextLong()));
+            System.out.println(dogItem.getName());
         }
 
     List<Dog> dogsLinkedList = new LinkedList<>();
