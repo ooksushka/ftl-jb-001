@@ -4,6 +4,7 @@
 
 import animals.Cat;
 import animals.Dog;
+import animals.Duck;
 
 public class Main {
 
@@ -28,8 +29,16 @@ public class Main {
         dog.whereTheDog();
         dog.goToStick(5);
         dog.whereTheDog();
-
+        dog.voice();
         Dog homelessDog = Dog.ofHomeless(100);
+        homelessDog.voice();
+
+        Duck duck = new Duck();
+        duck.voice();
+        duck.takeOff();
+        duck.isTheBirdFlying();
+        duck.landing();
+        duck.isTheBirdFlying();
     }
 
 }
