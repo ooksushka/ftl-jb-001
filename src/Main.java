@@ -5,11 +5,9 @@
 import L013.SwitchExample;
 import L019.StringExample;
 import L020.TypeConversion;
-import L026.FileExample;
-import L027.ThreadExample;
 import L028.House;
 import animals.*;
-import tasks.T00_1_2.Numbers;
+import tasks.T00_1_2_3.Numbers;
 
 import java.io.IOException;
 import java.util.*;
@@ -119,10 +117,12 @@ public class Main {
 
         ////////////TASKS
 
-        Numbers number = new Numbers();
-        number.runOneToFive();
+        Numbers numbers = new Numbers();
+        numbers.runOneToFive();
         System.out.println();
-        number.runFiveToOne();
+        numbers.runFiveToOne();
+        System.out.println();
+        numbers.runMultiplyThree();
 
 
     }
