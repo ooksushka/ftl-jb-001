@@ -9,10 +9,9 @@ import L026.FileExample;
 import L027.ThreadExample;
 import L028.House;
 import animals.*;
-import tasks.T001.Numbers;
+import tasks.T00_1_2.Numbers;
 
 import java.io.IOException;
-import java.net.ServerSocket;
 import java.util.*;
 
 public class Main {
@@ -102,8 +101,8 @@ public class Main {
         }catch (Animal.WeightException ignore){
         }
 
-        FileExample.run();
-        ThreadExample.run();
+//        FileExample.run();
+//        ThreadExample.run();
 
         House house = new House.Builder()
                 .optHasSwimmingPool(true)
@@ -122,6 +121,8 @@ public class Main {
 
         Numbers number = new Numbers();
         number.runOneToFive();
+        System.out.println();
+        number.runFiveToOne();
 
 
     }
