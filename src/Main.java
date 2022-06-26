@@ -7,6 +7,7 @@ import L019.StringExample;
 import L020.TypeConversion;
 import L026.FileExample;
 import L027.ThreadExample;
+import L028.House;
 import animals.*;
 
 import java.io.IOException;
@@ -101,7 +102,20 @@ public class Main {
         }
 
         FileExample.run();
-
         ThreadExample.run();
+
+        House house = new House.Builder()
+                .optHasSwimmingPool(true)
+                .build();
+        System.out.println(house.toString());
+
+        House houseFull = new House.Builder()
+                .optHasGarden(true)
+                .optHasFancyStatues(true)
+                .optHasGarage(true)
+                .optHasSwimmingPool(true)
+                .build();
+        System.out.println(houseFull.toString());
+
     }
 }
