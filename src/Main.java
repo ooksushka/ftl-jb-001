@@ -5,14 +5,16 @@
 import L013.SwitchExample;
 import L019.StringExample;
 import L020.TypeConversion;
+import L026.FileExample;
 import animals.*;
 
+import java.io.IOException;
 import java.net.ServerSocket;
 import java.util.*;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 //        HelloWorld.run();
 //        POJO.run();
 //
@@ -96,5 +98,8 @@ public class Main {
             dog.getWeight().setValue(-10);
         }catch (Animal.WeightException ignore){
         }
+
+        FileExample.run();
+
     }
 }
