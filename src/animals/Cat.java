@@ -1,15 +1,15 @@
 package animals;
 
 public class Cat extends Animal {
-    public Cat(String name, Integer weight) {
+    public Cat(String name, AnimalWeight weight) {
         super(name, weight, MoveType.WALK);
     }
     public Cat() {
         super(MoveType.WALK);
     }
 
-    private Integer heightCoefficient(Integer weight) {
-        if(weight > 10) return 120;
+    private Integer heightCoefficient(AnimalWeight weight) {
+        if(weight.getValue() > 10) return 120;
 
         return 90;
     }

@@ -3,7 +3,7 @@ package animals;
 import java.util.*;
 
 public class Dog extends Animal {
-    public Dog(String name, Integer weight) {
+    public Dog(String name, AnimalWeight weight) {
         super(name, weight, MoveType.WALK);
     }
 
@@ -14,9 +14,9 @@ public class Dog extends Animal {
     public static List<Dog> randomArray() {
         List<Dog> dogs = new ArrayList<>();
 
-        dogs.add(Dog.of("Sharik", 3));
-        dogs.add(Dog.of("Bubble", 1));
-        dogs.add(Dog.of("Tuzic", 5));
+        dogs.add(Dog.of("Sharik", new AnimalWeight(3, AnimalWeight.WeightType.KG)));
+        dogs.add(Dog.of("Bubble", new AnimalWeight(1, AnimalWeight.WeightType.KG)));
+        dogs.add(Dog.of("Tuzic", new AnimalWeight(5, AnimalWeight.WeightType.KG)));
 
         return dogs;
     }
@@ -34,11 +34,11 @@ public class Dog extends Animal {
         System.out.println(this.currentPosition);
     }
 
-    public static Dog of(String name, Integer weight) {
+    public static Dog of(String name, AnimalWeight weight) {
         return new Dog(name, weight);
     }
 
-    public static Dog ofHomeless(Integer weight){
+    public static Dog ofHomeless(AnimalWeight weight){
         Dog dog = new Dog();
         dog.weight =weight;
         return dog;
