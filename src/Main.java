@@ -91,7 +91,10 @@ public class Main {
         StringExample.run();
         TypeConversion.run();
 
-
-    
+        dog.setWeight(new Animal.AnimalWeight(10, Animal.AnimalWeight.WeightType.KG));
+        try {
+            dog.getWeight().setValue(-10);
+        }catch (Animal.WeightException ignore){
+        }
     }
 }
