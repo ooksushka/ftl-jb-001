@@ -49,14 +49,14 @@ public class FileExample {
     return response;
     }
 
-    public static void run() throws IOException {
-        String url = "https://ya.ru";
-        String content = readUrl(url);
-        System.out.println(content);
-
-        writeFile("ya.txt", content);
-
-        System.out.println(readFile("ya.txt"));
-    }
+//    public static void run() throws IOException {
+//        String url = "https://ya.ru";
+//        String content = readUrl(url);
+//        System.out.println(content);
+//
+//        writeFile("ya.txt", content);
+//
+//        System.out.println(readFile("ya.txt"));
+//    }
 
 }
