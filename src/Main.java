@@ -1,9 +1,11 @@
-import L001.HelloWorld;
+import tasks.T001.Numbers;
 
 public class Main {
 
     public static void main(String[] args) {
-        HelloWorld.run();
+        Numbers number = new Numbers();
+        number.runOneToFive();
+
     }
 
 }
