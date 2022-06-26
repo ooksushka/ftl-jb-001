@@ -7,7 +7,7 @@ import L019.StringExample;
 import L020.TypeConversion;
 import L028.House;
 import animals.*;
-import tasks.T00_1_4.Numbers;
+import tasks.T00_1_5.Numbers;
 
 import java.io.IOException;
 import java.util.*;
@@ -124,11 +124,13 @@ public class Main {
         System.out.println();
         numbers.runMultiplyThree();
 
-        Scanner s = new Scanner(System.in);
-        System.out.println("Введите число:");
-        String num = s.nextLine();
-        System.out.println("Сумма чисел от введенного числа до единицы: ");
-        numbers.runSum(Integer.parseInt(num));
+//        Scanner s = new Scanner(System.in);
+//        System.out.println("Введите число:");
+//        String num = s.nextLine();
+//        System.out.println("Сумма чисел от введенного числа до единицы: ");
+//        numbers.runSum(Integer.parseInt(num));
+
+        numbers.runMultiplySeven();
 
 
     }
