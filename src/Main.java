@@ -6,6 +6,7 @@ import L013.SwitchExample;
 import L019.StringExample;
 import L020.TypeConversion;
 import L026.FileExample;
+import L027.ThreadExample;
 import animals.*;
 
 import java.io.IOException;
@@ -101,5 +102,6 @@ public class Main {
 
         FileExample.run();
 
+        ThreadExample.run();
     }
 }
