@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/src/L019/StringExample.java" charset="UTF-8" />
+=======
+  <component name="Encoding">
+>>>>>>> 2fd2e69d5ee1dd828cae7c11ff598ffee7d87649
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

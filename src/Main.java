@@ -9,6 +9,7 @@ import L026.FileExample;
 import L027.ThreadExample;
 import L028.House;
 import animals.*;
+import tasks.T001.Numbers;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -116,6 +117,12 @@ public class Main {
                 .optHasSwimmingPool(true)
                 .build();
         System.out.println(houseFull.toString());
+
+        ////////////TASKS
+
+        Numbers number = new Numbers();
+        number.runOneToFive();
+
 
     }
 }
