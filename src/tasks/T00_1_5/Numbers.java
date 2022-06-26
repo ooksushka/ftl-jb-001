@@ -1,4 +1,4 @@
-package tasks.T00_1_4;
+package tasks.T00_1_5;
 
 public class Numbers {
     public static void runOneToFive(){
@@ -26,7 +26,14 @@ public class Numbers {
             result += i;
         }
          System.out.println(result);
+    }
 
+    public static void runMultiplySeven(){
+        int k = 7;
+        for(int i = 1; i < 15; i++){
+            int result = k*i;
+            System.out.print(result + " ");
+        }
     }
 
 }
