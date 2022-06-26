@@ -1,4 +1,4 @@
-package tasks.T00_1_2_3;
+package tasks.T00_1_4;
 
 public class Numbers {
     public static void runOneToFive(){
@@ -18,6 +18,15 @@ public class Numbers {
             int result = k*i;
             System.out.println(k + "*" + i + "=" + result);
         }
+    }
+
+    public static void runSum(int num){
+        int result = 0;
+        for(int i = num; i > 0; i--){
+            result += i;
+        }
+         System.out.println(result);
+
     }
 
 }
