@@ -1,4 +1,4 @@
-package tasks.T00_1_5;
+package tasks.T00_1_6;
 
 public class Numbers {
     public static void runOneToFive(){
@@ -34,6 +34,17 @@ public class Numbers {
             int result = k*i;
             System.out.print(result + " ");
         }
+        System.out.println();
+    }
+
+    public static void runDegreesTwo(){
+        int k = 2;
+        for (int i = 0; i < 10; i++){
+            double d = Math.pow(k, i);
+            int result = (int) d;
+            System.out.print( result + " ");
+        }
+        System.out.println();
     }
 
 }
