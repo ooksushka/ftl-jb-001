@@ -7,6 +7,7 @@ import L019.StringExample;
 import L020.TypeConversion;
 import L028.House;
 import animals.*;
+import tasks.T007.Symbols;
 import tasks.T00_1_6.Numbers;
 
 import java.io.IOException;
@@ -131,7 +132,10 @@ public class Main {
 //        numbers.runSum(Integer.parseInt(num));
 
         numbers.runMultiplySeven();
-
         numbers.runDegreesTwo();
+
+        Symbols symbols = new Symbols();
+        symbols.runStars();
+
     }
 }
