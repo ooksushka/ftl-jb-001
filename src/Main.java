@@ -8,6 +8,7 @@ import L020.TypeConversion;
 import L028.House;
 import animals.*;
 import tasks.T007.Symbols;
+import tasks.T009.Riddle;
 import tasks.T00_1_6_and_8.Numbers;
 
 import java.io.IOException;
@@ -138,5 +139,9 @@ public class Main {
         symbols.runStars();
 
         numbers.runFibonacci();
+
+        Riddle riddle = new Riddle();
+        riddle.run();
+
     }
 }
