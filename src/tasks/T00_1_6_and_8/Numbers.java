@@ -1,4 +1,4 @@
-package tasks.T00_1_6;
+package tasks.T00_1_6_and_8;
 
 public class Numbers {
     public static void runOneToFive(){
@@ -45,6 +45,21 @@ public class Numbers {
             System.out.print( result + " ");
         }
         System.out.println();
+    }
+
+    public static void runFibonacci() {
+        int num0 = 1;
+        int num1 = 1;
+        int num2;
+
+            System.out.print(num0 + " " + num0 + " ");
+            for (int i = 3; i <= 11; i++) {
+                num2 = num0 + num1;
+                System.out.print(num2 + " ");
+
+                num0 = num1;
+                num1 = num2;
+            }
     }
 
 }

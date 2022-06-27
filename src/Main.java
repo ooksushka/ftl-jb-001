@@ -8,7 +8,7 @@ import L020.TypeConversion;
 import L028.House;
 import animals.*;
 import tasks.T007.Symbols;
-import tasks.T00_1_6.Numbers;
+import tasks.T00_1_6_and_8.Numbers;
 
 import java.io.IOException;
 import java.util.*;
@@ -137,5 +137,6 @@ public class Main {
         Symbols symbols = new Symbols();
         symbols.runStars();
 
+        numbers.runFibonacci();
     }
 }
