@@ -7,7 +7,7 @@ import L019.StringExample;
 import L020.TypeConversion;
 import L028.House;
 import animals.*;
-import tasks.T00_1_5.Numbers;
+import tasks.T00_1_6.Numbers;
 
 import java.io.IOException;
 import java.util.*;
@@ -132,6 +132,6 @@ public class Main {
 
         numbers.runMultiplySeven();
 
-        
+        numbers.runDegreesTwo();
     }
 }
