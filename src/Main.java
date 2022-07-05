@@ -10,7 +10,7 @@ import animals.*;
 import tasks.T007.Symbols;
 import tasks.T009.Riddle;
 import tasks.T00_1_6_and_8.Numbers;
-import tasks.T010.ArrayTask;
+import tasks.T010_11.ArrayTask;
 
 import java.io.IOException;
 import java.util.*;
@@ -147,6 +147,6 @@ public class Main {
 
         ArrayTask arrayTask = new ArrayTask();
         arrayTask.runMinMaxAvg();
-
+        arrayTask.bubbleSort();
     }
 }
