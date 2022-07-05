@@ -1,4 +1,4 @@
-package tasks.T010;
+package tasks.T010_11;
 
 public class ArrayTask {
 
@@ -27,5 +27,27 @@ public class ArrayTask {
         System.out.println("min = " + min);
         System.out.println("avg = " + avg);
     }
+
+    public static void bubbleSort() {
+        int[] arr = {11, 7, 9, 3, 2, 4, 6, 5, 17};
+
+        for (int i = 0; i < arr.length - 1; i++){
+            for (int j = 0; j < arr.length - i - 1; j++){
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
+
+
 
 }
