@@ -10,7 +10,7 @@ import animals.*;
 import tasks.T007.Symbols;
 import tasks.T009.Riddle;
 import tasks.T00_1_6_and_8_and_12.Numbers;
-import tasks.T010_11.ArrayTask;
+import tasks.T010_11_and_13.ArrayTask;
 
 import java.io.IOException;
 import java.util.*;
@@ -153,6 +153,7 @@ public class Main {
 
         numbers.runPrimeNumbers();
 
+        arrayTask.runDeleteItems();
 
     }
 }

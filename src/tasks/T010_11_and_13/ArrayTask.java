@@ -1,4 +1,4 @@
-package tasks.T010_11;
+package tasks.T010_11_and_13;
 
 public class ArrayTask {
 
@@ -47,7 +47,25 @@ public class ArrayTask {
         System.out.println();
     }
 
+    public static void runDeleteItems(){
+        int[] arr = {11, 2, 9, 3, 2, 4, 6, 2, 17};
+        int value = 2;
+        int k = 0;
 
+        for(int i = 0; i< arr.length; i++){
+            if(arr[i] == value){
+                k++;
+            } else{
+                arr[i - k] = arr[i];
+            }
+        }
+        int[] newArr = new int[arr.length - k];
+        for (int i = 0; i < newArr.length; i++){
+            newArr[i] = arr[i];
+            System.out.print(newArr[i] + " ");
+        }
+        System.out.println();
+    }
 
 
 }
