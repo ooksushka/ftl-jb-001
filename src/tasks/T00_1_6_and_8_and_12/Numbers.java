@@ -1,4 +1,4 @@
-package tasks.T00_1_6_and_8;
+package tasks.T00_1_6_and_8_and_12;
 
 public class Numbers {
     public static void runOneToFive(){
@@ -60,6 +60,22 @@ public class Numbers {
                 num0 = num1;
                 num1 = num2;
             }
+    }
+
+    public static void runPrimeNumbers(){
+
+        for (int i = 2; i < 101; i++){
+            int k = 0;
+            for (int j = 2; j < i + 1; j++){
+                if(i % j == 0){
+                    k++;
+                }
+            }
+            if(k == 1){
+                System.out.print( i + " ");
+            }
+        }
+        System.out.println();
     }
 
 }

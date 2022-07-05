@@ -9,7 +9,7 @@ import L028.House;
 import animals.*;
 import tasks.T007.Symbols;
 import tasks.T009.Riddle;
-import tasks.T00_1_6_and_8.Numbers;
+import tasks.T00_1_6_and_8_and_12.Numbers;
 import tasks.T010_11.ArrayTask;
 
 import java.io.IOException;
@@ -147,6 +147,12 @@ public class Main {
 
         ArrayTask arrayTask = new ArrayTask();
         arrayTask.runMinMaxAvg();
+
         arrayTask.bubbleSort();
+
+
+        numbers.runPrimeNumbers();
+
+
     }
 }
