@@ -12,6 +12,7 @@ import tasks.T009.Riddle;
 import tasks.T00_1_6_and_8_and_12.Numbers;
 import tasks.T010_11_and_13.ArrayTask;
 import tasks.T014.Vector;
+import tasks.T015.RandomValue;
 
 import java.io.IOException;
 import java.util.*;
@@ -166,6 +167,7 @@ public class Main {
         System.out.println("add: " + vectors[0].runAdd(vectors[1]));
         System.out.println("diff: " + vectors[0].runDiff(vectors[1]));
 
-
+        RandomValue randomValue = new RandomValue(new int[]{1, 2, 3}, new int[]{1, 2, 10});
+        randomValue.run();
     }
 }
