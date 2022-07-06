@@ -11,6 +11,7 @@ import tasks.T007.Symbols;
 import tasks.T009.Riddle;
 import tasks.T00_1_6_and_8_and_12.Numbers;
 import tasks.T010_11_and_13.ArrayTask;
+import tasks.T014.Vector;
 
 import java.io.IOException;
 import java.util.*;
@@ -154,6 +155,17 @@ public class Main {
         numbers.runPrimeNumbers();
 
         arrayTask.runDeleteItems();
+
+        Vector[] vectors = Vector.generate(5);
+        System.out.println(vectors[0]);
+        System.out.println(vectors[1]);
+        System.out.println("length: " +  vectors[0].runLength());
+        System.out.println("scalar product: " + vectors[0].runScalarProduct(vectors[1]));
+        System.out.println("product: " + vectors[0].runProduct(vectors[1]));
+        System.out.println("cos: " + vectors[0].runCos(vectors[1]));
+        System.out.println("add: " + vectors[0].runAdd(vectors[1]));
+        System.out.println("diff: " + vectors[0].runDiff(vectors[1]));
+
 
     }
 }
